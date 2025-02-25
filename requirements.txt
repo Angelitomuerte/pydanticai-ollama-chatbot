@@ -1,0 +1,8 @@
+
+pydantic-ai[logfire]
+gradio
+ollama
+numpy
+logfire
+pydantic
+requests

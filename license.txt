@@ -1,0 +1,27 @@
+Apache License
+Version 2.0, January 2004
+http://www.apache.org/licenses/
+
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+...
+This project contains and uses resources from the following sources:
+1️⃣ Pydantic AI License
+Pydantic AI is under the MIT License, which is very permissive.
+✅ You can use, modify, and distribute the code freely.
+✅ No restrictions on commercial use.
+2️⃣ Ollama License
+Ollama uses an Apache 2.0 License.
+✅ You can freely modify and distribute the software.
+✅ You must include attribution.
+✅ You must disclose any modifications.
+3️⃣ Llama 3 (Meta AI) License
+Meta Llama 3 models have a commercial-use license (Meta Llama 3 Community License).
+✅ Allows commercial & research use.
+⚠️ No hosting the model as a standalone API service.
+⚠️ Must comply with Meta’s Terms.
+
+You should have received a copy of the Apache License along with this
+project. If not, see http://www.apache.org/licenses/.
+
+
