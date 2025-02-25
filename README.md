@@ -84,7 +84,7 @@ CLI Mode
 python3 main.py
 ```
 
-Select either "cli" for commandline interface or "ui" for browswer api. 
+Select either "cli" for command line interface or "ui" for browser api. 
 
 Type exit to quit.
 
