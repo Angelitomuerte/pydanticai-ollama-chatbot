@@ -1,4 +1,4 @@
-﻿# pydanticAi_Ollama_Llama3.1
+# pydanticai-ollama-chatbot
 Pydantic AI Chatbot on Ollama with LLaMA 3.1 in Docker
 🚀 A fully containerized chatbot leveraging Pydantic AI framework and Ollama's LLaMA 3.1 LLM.
 Easily deployable using Docker, with support for customizable LLM models.
@@ -17,8 +17,8 @@ Available as a prebuilt Docker image – just pull and run!
 
 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/Angelitomuerte/pydanticAi_Ollama_Llama3.1.git
-cd pydanticAi_Ollama_Llama3.1
+git clone https://github.com/Angelitomuerte/pydanticai-ollama-chatbot.git
+cd pydanticai-ollama-chatbot
 ```
 2️⃣ Pull the Prebuilt Docker Image (Recommended)
 The chatbot is available as a prebuilt container on Docker Hub:
@@ -30,7 +30,7 @@ docker pull angelmuerte/pydanticai-chatbot:latest
 ```bash
 docker run --rm -it --gpus all -p 7860:7860 angelmuerte/pydanticai-chatbot:latest
 ```
-🔹 Note: If you are not using a GPU, omit --gpus all.
+🔹 Note: If you are not using a GPU, omit --gpus all. If you want to mount a local project directory, add that directory in the run command as per Docker mount instructions.
 
 🔧 Build & Run Locally (Alternative)
 If you prefer building the image manually, follow these steps:
@@ -42,6 +42,7 @@ If you prefer building the image manually, follow these steps:
 ```bash
 docker build -t pydanticai-chatbot .
 ```
+🔹 Note: Be sure to copy the dockerfile into your working directory first.
 3️⃣ Run the Container
 ```bash
 docker run --rm -it --gpus all -p 7860:7860 pydanticai-chatbot
@@ -61,6 +62,7 @@ Modify the ChatbotAgent class in chatbot_agent.py:
 ```python
 ollama_model = OpenAIModel(model_name='<your_desired_model>', base_url='http://localhost:11434/v1')
 ```
+🔹 Note: base url may vary according to llm model.  Check Ollama documentation for more info.
 🤖 Using the Chatbot
 Once running, interact via CLI or Gradio UI.
 
@@ -68,7 +70,11 @@ CLI Mode
 ```bash
 python3 main.py
 ```
+Select either "cli" for commandline interface or "ui" for browswer api. 
 Type exit to quit.
+If you select "cli" a user prompt will appear and you may begin chat with the chatbot in the terminal.
+If you select "ui", and follow the next set of instructions.
+
 Web UI (Gradio)
 Open your browser and go to:
 
@@ -90,7 +96,7 @@ pydanticAi_Ollama_Llama3.1/
 └── README.md               # This file
 ```
 📜 License
-🔹 This project is open-source under the MIT License.
+🔹 Apache 2.0
 
 📬 Contact & Support
 💬 Questions or issues? Feel free to open an issue.
