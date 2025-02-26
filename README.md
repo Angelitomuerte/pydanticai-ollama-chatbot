@@ -105,7 +105,7 @@ Use the interactive web-based chat interface.
 ⚙️ Project Structure
 
 ```bash
-pydanticAi_Ollama_Llama3.1/
+pydanticai-ollama-chatbot/
 │── Dockerfile              # Defines the containerized environment
 │── requirements.txt        # Lists all dependencies
 │── main.py                 # CLI and Gradio interface for chatbot
@@ -115,6 +115,15 @@ pydanticAi_Ollama_Llama3.1/
 │   ├── utility_tools.py    # Additional tools for chatbot
 └── README.md               # This file
 ```
+***NOTE***
+
+The chatbot model included in this repository is a very basic chatbot model with little to no context memory.  
+
+It is meant for demonstration purposes. If you want a more developed chatbot model, you will need to build a chatbot_agent.py file 
+
+(similarly to the one included) with system prompts, tool definitions, and chat history memory. I plan to build additional agent files, so check back often.  
+
+See Pydantic Ai for more info!
 
 📜 License
 
